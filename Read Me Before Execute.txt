@@ -1,0 +1,68 @@
+Create MERN Curd Operation Guide 
+++++++++++++++++++++++++++Backend Part+++++++++++++++++++++++++++++++++++++++++++++++++++++
+remember before doing this kind of things you need install all of the tools like
+1)mongoDB for GUI (https://www.mongodb.com/try/download/community) and mongosh for command line interface (https://www.mongodb.com/try/download/shell)
+2)Node Js 
+
+1) run command inside backend folder: npm init
+2) run command: write project name 
+3) run the project by using this command : npm start dev
+
+    And remember one think if there isn't available of nodemone then please configure it by using this command:
+     npm install -g nodemon
+     npm install --save-dev nodemon
+4) install express by using this command:
+   run command: npm i express
+5) install mongoose by using this command:
+   run command: npm i mongoose
+6) install cors by using this command: 
+   run command: npm i cors
+7) install dotenv by using this command: 
+   run command: npm i dotenv
+
+ Note this thing if you want import any file serve.js then you  need to add "type": "module" inside package.json file
+    like this : import express from 'express'
+
++++++++++++++++++++++++++++++
+!!! if you want to run the serve then you need to use this code !!!
+ import express from 'express'
+
+ const app = express()
+
+app.listen(4000, () =>{
+console.log('serve is running');
+})
+
+after finished the process that we have to use other method to creating port like this !!!!!!!!
+create .env file 
+you have to write the like this: PORT=4000
+
+app.listen, () =>{
+console.log('serve is running');
+})
+
+8) create MVC Model Folder
+   *models
+   *controller
+   *routes
+   *utlis -> db.Js
+
+   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Frontend Part+++++++++++++++++++++++++++++++++++++++++++++++++++
+   1) create vite project using this command line 
+      run command: npm create vite@latest 
+                   select: react
+                           javascript
+      run command: cd client
+      run command: npm install 
+      run command: npm dev  
+      install axios  from integrate api 
+      run command: npm i axios 
+      install bootstrap for design
+      run command: npm i bootstrap
+      install react-hot-toast
+      run command: npm i react-hot-toast
+
+      ----run the project by using this command---
+      run command: npm run dev 
+
+          
